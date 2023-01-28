@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<title>CHALLENGE ENCRIPTADOR</title>
+</head>
+<body>
+	<!--social buttons start-->
+  <div class="social">
+    <a href="https://www.facebook.com/romixhuk">Facebook <i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/romina_huk/?igshid=YzgyMTM2MGM%3D">Instagram <i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/HukRomina?t=yDSR3PrFeAiVatZdN0-STg&s=08">Twitter <i class="fab fa-twitter"></i></a>
+    <a href="linkedin.com/in/romina-huk-637248248">Linkedin <i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/RoHu17">Github <i class="fab fa-github"></i></a>
+    <a href="https://www.aluracursos.com/?gclid=EAIaIQobChMIksiDlvTM_AIVBW6RCh0OhwLiEAAYASAAEgL8afD_BwE">Alura <i class="fab fa-amilia"></i></a>
+  </div>
+  <!--social buttons end-->
+
+  <!--content start-->
+
+  <div class="content">
+    <!--<form action="accion" method="get" name="txt" onsubmit="return validar()"> -->  
+  		<div class="container">
+  			<!-- for Logo content -->
+        <div class="logo">
+        	<img class="logoImg" src="Img/logo2.png">      
+        	<h1 class="logoTitle" id="logoTitle">Encriptador de Mensajes</h1>     
+        </div>
+        <!-- for left content -->
+        <div class="left">
+          <button type="button" id="borrar" onclick="borrar();"><i class="far fa-trash-alt"></i></button>
+         	<!--<input class="text-input" id="inputTexto" type="text" placeholder="Ingrese el texto aqui" size="140">-->
+          <textarea type="submit" class="text-input" id="inputTexto" name="inputTexto" type="text" placeholder="Ingrese el texto aqui" rows="6" cols="80"></textarea>
+        </div>
+        <!-- right container -->
+        <div class="right">
+        	<img src="Img/buscar.png" id="ImgRight">
+        	<h1 id="texto">Ningun mensaje fue encontrado</h1>
+        	<textarea id="texto2" readonly="readonly" name="name" rows="6" cols="60">Ingrese el texto que desea Encriptar o Desencriptar</textarea><br><br><br>
+          <input type="submit" value="¡Copiar!" id="copiar" onclick="copiar();">
+        </div>
+        <!-- button container -->
+        <div class="two-button">
+        	<div class="box-texto">
+        		<h4 class="informacion" id="texto3">Solo miniscula y sin acentos</h4>
+        	</div>    
+        	<div class="box-button">
+            <input type="submit" value="Encriptar" id="btn-encriptar" onclick="encriptar(); cambiarImagen1();"><i class="fas fa-lock-alt"></i>
+            <input type="submit" value="Desencriptar" id="btn-desencriptar" onclick="desencriptar();">
+          </div>
+        </div>
+  		</div>
+    <!--</form>-->  
+  </div>
+ 
+	<!--content end-->
+
+	<Footer> © Copyright 2023 | Romina Huk | RoHu17 </Footer>
+	
+</body>
+
+</html>
